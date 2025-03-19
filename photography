@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhiếp Ảnh - Trần An Khang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #000;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        .form-container {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #fff;
+            color: #000;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Nhiếp Ảnh - Trần An Khang</h1>
+        <p>Chuyên gia nhiếp ảnh chân dung, phong cảnh và sự kiện.</p>
+        
+        <div class="form-container">
+            <h2>Đăng Ký Dịch Vụ</h2>
+            <form id="booking-form">
+                <input type="text" id="name" placeholder="Họ và Tên" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="phone" placeholder="Số điện thoại" required>
+                <select id="service">
+                    <option value="Chụp chân dung">Chụp chân dung</option>
+                    <option value="Chụp phong cảnh">Chụp phong cảnh</option>
+                    <option value="Chụp sự kiện">Chụp sự kiện</option>
+                </select>
+                <button type="submit">Đăng Ký</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("booking-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Đăng ký thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất.");
+        });
+    </script>
+</body>
+</html>
